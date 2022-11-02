@@ -13,6 +13,11 @@
 		578E549F2911495D00BCEAFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578E549D2911495D00BCEAFE /* Main.storyboard */; };
 		578E54A12911495E00BCEAFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578E54A02911495E00BCEAFE /* Assets.xcassets */; };
 		578E54A42911495E00BCEAFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578E54A22911495E00BCEAFE /* LaunchScreen.storyboard */; };
+		57D8338229120CE6003FECEB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8338129120CE6003FECEB /* ProfileViewController.swift */; };
+		57D8338429120D22003FECEB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8338329120D22003FECEB /* LoginViewController.swift */; };
+		57D8338629120DB7003FECEB /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8338529120DB7003FECEB /* Profile.swift */; };
+		57D83389291212F3003FECEB /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 57D83388291212F3003FECEB /* Toast */; };
+		57D8338D29121747003FECEB /* DeveloperProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8338C29121747003FECEB /* DeveloperProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		578E54A02911495E00BCEAFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		578E54A32911495E00BCEAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		578E54A52911495E00BCEAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D8338129120CE6003FECEB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		57D8338329120D22003FECEB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		57D8338529120DB7003FECEB /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		57D8338C29121747003FECEB /* DeveloperProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D83389291212F3003FECEB /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,10 @@
 				578E54A02911495E00BCEAFE /* Assets.xcassets */,
 				578E54A22911495E00BCEAFE /* LaunchScreen.storyboard */,
 				578E54A52911495E00BCEAFE /* Info.plist */,
+				57D8338129120CE6003FECEB /* ProfileViewController.swift */,
+				57D8338329120D22003FECEB /* LoginViewController.swift */,
+				57D8338529120DB7003FECEB /* Profile.swift */,
+				57D8338C29121747003FECEB /* DeveloperProfileView.swift */,
 			);
 			path = "Tugas 4";
 			sourceTree = "<group>";
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = "Tugas 4";
+			packageProductDependencies = (
+				57D83388291212F3003FECEB /* Toast */,
+			);
 			productName = "Tugas 4";
 			productReference = 578E54942911495D00BCEAFE /* Tugas 4.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 578E548B2911495D00BCEAFE;
+			packageReferences = (
+				57D83387291212F3003FECEB /* XCRemoteSwiftPackageReference "toast-swift" */,
+			);
 			productRefGroup = 578E54952911495D00BCEAFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				578E549C2911495D00BCEAFE /* ViewController.swift in Sources */,
+				57D8338629120DB7003FECEB /* Profile.swift in Sources */,
 				578E54982911495D00BCEAFE /* AppDelegate.swift in Sources */,
+				57D8338229120CE6003FECEB /* ProfileViewController.swift in Sources */,
+				57D8338429120D22003FECEB /* LoginViewController.swift in Sources */,
 				578E549A2911495D00BCEAFE /* SceneDelegate.swift in Sources */,
+				57D8338D29121747003FECEB /* DeveloperProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57D83387291212F3003FECEB /* XCRemoteSwiftPackageReference "toast-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BastiaanJansen/toast-swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57D83388291212F3003FECEB /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57D83387291212F3003FECEB /* XCRemoteSwiftPackageReference "toast-swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 578E548C2911495D00BCEAFE /* Project object */;
 }
